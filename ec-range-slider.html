@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ec-range-slider</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--http://andreruffert.github.io/rangeslider.js/-->
+<!--Animation CSS-->
+<link rel="stylesheet" href="http://www.justinaguilar.com/animations/css/animations.css">
+<!--Slider CSS-->
+<link rel="stylesheet" href="ec-range-slider.css">
+<!--FontAwesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/FontAwesome.otf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.svg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.woff">
+</head>
+<body>
+
+<h1>How much would you like to advance?</h1>
+<br>
+
+<input type="range" value="6500" step="25" min="1000" max="12600">
+
+<div class="range">
+  <small class="min pull-left">Min</small>
+  <small class="max pull-right">Max</small>
+</div>
+
+<small id="helper" class="slideRight text-center">Slide to get started &#x2192;</small>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="ec-range-slider.js"></script>
+<script>
+$(document).ready(function(){
+
+//when slider changes, hide start message
+$("input").on("change", function() {
+  $("#helper").fadeOut("slow");
+});
+
+});
+</script>
+</body>
+</html>
