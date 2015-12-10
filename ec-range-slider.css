@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/* CSS Document */
+/*
+/////////////////////////
+Page Styles
+/////////////////////////
+*/
 body {
   color: #404040;
   padding: 50px;
@@ -13,9 +17,13 @@ h1 {
   font-weight: 300;
 }
 
-/*.range{
-  border: 1px solid hotpink;
-}*/
+
+/*
+/////////////////////////
+Custom Slider Styles
+/////////////////////////
+*/
+
 .min {
   padding-top: 5px;
   padding-left: 10px;
@@ -40,11 +48,11 @@ output {
   font-size: 2em;
 }
 
-/*.rangeslider,
-input[type='range'] {
-  max-width: 400px;
-}*/
-/* original css */
+/*
+/////////////////////////
+Generic Slider Styles
+/////////////////////////
+*/
 .rangeslider,
 .rangeslider__fill {
   display: block;
